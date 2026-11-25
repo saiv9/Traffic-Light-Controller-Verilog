@@ -23,7 +23,7 @@ The light encoding is active high: `100` red, `010` yellow, and `001` green.
 Install Icarus Verilog and Python with Matplotlib, then run:
 
 ```bash
-./scripts/run_sim.sh
+bash ./scripts/run_sim.sh
 ```
 
 The testbench checks each phase duration and the complete sequence. The script saves a VCD, a simulation log, and a PNG timing view in `docs/waveforms/`.
