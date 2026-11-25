@@ -1,0 +1,3 @@
+VCD info: dumpfile build/traffic_light_controller.vcd opened for output.
+PASS: 14 phase checks completed
+tb/tb_traffic_light_controller.v:80: $finish called at 157000 (1ps)
