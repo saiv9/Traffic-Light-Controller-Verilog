@@ -4,6 +4,9 @@ A six-state finite state machine for a two-road intersection. The north-south an
 
 The phase lengths are set in clock cycles with module parameters. This keeps the design easy to test with short simulation values and easy to adapt to a different clock rate.
 
+
+![Traffic light controller architecture](docs/architecture.svg)
+
 ## Signals
 
 | Signal | Direction | Meaning |
