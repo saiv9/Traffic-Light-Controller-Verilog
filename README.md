@@ -2,7 +2,7 @@
 
 This project uses a six-state Moore finite state machine to control a simple two-road intersection. North-south and east-west traffic take turns, with an all-red interval between directions.
 
-The phase lengths are parameters measured in clock cycles. I used short values in the testbench so the full sequence is easy to inspect.
+The phase lengths are parameters measured in clock cycles. Short values in the testbench make the full sequence easy to inspect.
 
 ![Traffic light controller architecture](docs/architecture.svg)
 
