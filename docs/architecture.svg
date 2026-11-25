@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+<rect width="1200" height="650" rx="18" fill="#f5f8fc"/>
+<text x="42" y="55" font-family="Arial" font-size="30" font-weight="700" fill="#1f2a3d">Traffic Light Controller</text>
+<text x="42" y="84" font-family="Arial" font-size="15" fill="#526680">Six-state Moore FSM for a two-road intersection</text>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L9 3 L0 6 Z" fill="#355f91"/></marker><marker id="g" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L9 3 L0 6 Z" fill="#5b805f"/></marker></defs>
+<g font-family="Arial">
+<rect x="45" y="150" width="190" height="120" rx="14" fill="#fff" stroke="#26364b" stroke-width="2"/>
+<text x="72" y="188" font-size="19" font-weight="700" fill="#1f2a3d">Inputs</text><text x="72" y="220" font-size="15" fill="#526680">clk and rst_n</text><text x="72" y="245" font-size="13" fill="#71839b">Phase parameters</text>
+<rect x="315" y="125" width="300" height="170" rx="14" fill="#eaf0f7" stroke="#526984" stroke-width="2"/>
+<text x="355" y="165" font-size="20" font-weight="700" fill="#1f2a3d">FSM and timer</text><text x="355" y="200" font-size="15" fill="#344b68">State register</text><text x="355" y="228" font-size="15" fill="#344b68">Cycle counter</text><text x="355" y="256" font-size="13" fill="#71839b">Advances after each phase length</text>
+<rect x="720" y="125" width="420" height="140" rx="14" fill="#edf4ed" stroke="#5b805f" stroke-width="2"/>
+<text x="765" y="164" font-size="20" font-weight="700" fill="#243a2a">North-south signals</text><text x="765" y="198" font-size="15" fill="#526680">Green  →  Yellow  →  Red</text><text x="765" y="230" font-size="13" fill="#71839b">One output encoding per state</text>
+<rect x="720" y="325" width="420" height="140" rx="14" fill="#edf4ed" stroke="#5b805f" stroke-width="2"/>
+<text x="765" y="364" font-size="20" font-weight="700" fill="#243a2a">East-west signals</text><text x="765" y="398" font-size="15" fill="#526680">Red  →  Green  →  Yellow</text><text x="765" y="430" font-size="13" fill="#71839b">All-red interval between directions</text>
+<path d="M235 210 H315" stroke="#355f91" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<path d="M615 195 H720" stroke="#5b805f" stroke-width="3" fill="none" marker-end="url(#g)"/>
+<path d="M615 230 H665 V395 H720" stroke="#5b805f" stroke-width="3" fill="none" marker-end="url(#g)"/>
+<rect x="45" y="350" width="570" height="115" rx="14" fill="#fff" stroke="#8b9bb0" stroke-width="1.5"/>
+<text x="75" y="388" font-size="18" font-weight="700" fill="#1f2a3d">State order</text>
+<text x="75" y="422" font-size="15" fill="#526680">NS green  →  NS yellow  →  all red  →  EW green  →  EW yellow  →  all red</text>
+<text x="45" y="540" font-size="16" font-weight="700" fill="#1f2a3d">Timing</text>
+<text x="45" y="570" font-size="14" fill="#526680">GREEN_CYCLES, YELLOW_CYCLES and ALL_RED_CYCLES are measured in clock cycles.</text>
+<text x="45" y="605" font-size="12" fill="#71839b">Outputs are active high and use {red, yellow, green} bit order.</text>
+</g></svg>
